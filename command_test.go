@@ -3,7 +3,7 @@ package ishell_test
 import (
 	"testing"
 
-	"github.com/abiosoft/ishell"
+	"github.com/arrow2nd/ishell"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -311,7 +311,7 @@ MIT
 ## Credits
 Library | Use
 ------- | -----
-[github.com/flynn-archive/go-shlex](https://github.com/flynn-archive/go-shlex) | splitting input into command and args.
+[github.com/google/shlex](https://github.com/google/shlex) | splitting input into command and args.
 [github.com/chzyer/readline](https://github.com/chzyer/readline) | readline capabilities.
 
 
