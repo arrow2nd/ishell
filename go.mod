@@ -1,4 +1,4 @@
-module github.com/arrow2nd/ishell
+module github.com/arrow2nd/ishell/v2
 
 go 1.16
 
