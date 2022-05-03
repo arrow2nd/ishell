@@ -1,12 +1,11 @@
+//go:build darwin || dragonfly || freebsd || (linux && !appengine) || netbsd || openbsd || solaris
 // +build darwin dragonfly freebsd linux,!appengine netbsd openbsd solaris
 
 package ishell
 
-import (
-	"github.com/arrow2nd/readline"
-)
-
 func clearScreen(s *Shell) error {
-	_, err := readline.ClearScreen(s.writer)
+	// PR: ClearScreen function corrected (@shadowshot-x)
+	// link: https://github.com/abiosoft/ishell/pull/146
+	_, err := s.writer.Write([]byte("\033[H\033[2J"))
 	return err
 }
